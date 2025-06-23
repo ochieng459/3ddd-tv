@@ -1,0 +1,213 @@
+body{
+  background: black;
+  color: white;
+}
+.home-btn{
+  background: red;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 8px;
+}
+.downloads-btn{
+  background: red;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 8px;
+}
+.profile-btn{
+ background: red;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 8px; 
+}
+button:hover{
+  opacity: calc(1.02);
+  transform: scale(1.09);
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+  margin: 60px;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+.footer button:hover {
+  background-color: aqua;
+  color: white; /* Optional: make text readable */
+  transition: background-color 0.3s ease;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* space between links */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  font-size: 18px; /* ← Increase this value to make it bigger */
+  font-weight: bold;
+  color: white; /* optional */
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: red;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+button{
+  cursor: pointer;
+}
+h1{
+  color: red;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: black;
+  padding: 10px 0;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(250px * 10); /* adjust based on number of posters */
+  animation: scroll-left 30s linear infinite;
+}
+
+.slider-track img {
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.slider-track img:hover {
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.search-bar {
+  padding: 10px 20px;
+  background: black;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+.category-section {
+  padding: 20px;
+  background-color: #000;
+}
+
+.category-title {
+  color: white;
+  font-size: 22px;
+  margin: 20px 0 10px 10px;
+}
+
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 15px;
+}
+
+.movie-row img {
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.movie-row img:hover {
+  transform: scale(1.05);
+}
+.watch-container {
+  padding: 30px;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+.movie-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.video-player img {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #222;
+}
+
+.movie-description {
+  margin: 20px auto;
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.watch-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: red;
+  color: white;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.watch-btn:hover {
+  background: #fff;
+  color: #000;
+}
+.movie-row::-webkit-scrollbar {
+  height: 8px;
+}
+.movie-row::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+
+
